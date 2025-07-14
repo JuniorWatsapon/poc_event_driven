@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'kafka-jmx'
+    static_configs:
+      - targets: ['kafka1:9404', 'kafka2:9404', 'kafka3:9404']
+
+  - job_name: 'event-api'
+    static_configs:
+      - targets: ['event-api:9001']
+
+  - job_name: 'kafka-app'
+    static_configs:
+      - targets: ['kafka-app:9003']
+
