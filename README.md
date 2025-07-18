@@ -3,7 +3,7 @@
 This repository demonstrates a **Proof of Concept (PoC)** for an **event-driven microservice architecture** using Apache Kafka for messaging, Prometheus + Grafana for metrics, and Elastic APM + Kibana for observability.
 
 ---
-
+![Untitled Diagram (1)](https://github.com/user-attachments/assets/5dbc28c1-71a2-4e94-8200-282541fbfa98)
 ## 📦 Stack Overview
 
 | Component         | Purpose                                   |
@@ -20,6 +20,7 @@ This repository demonstrates a **Proof of Concept (PoC)** for an **event-driven 
 | `Elasticsearch`   | Storage engine for APM data               |
 
 ---
+
 
 ## 🚀 Quick Start
 
