@@ -176,6 +176,17 @@ services:
     ports:
       - "9003:9003"  # Prometheus metrics
     restart: unless-stopped
+
+  locust:
+    image: locustio/locust
+    ports:
+      - "8089:8089" 
+    volumes:
+      - ../load-test:/mnt/locust
+    working_dir: /mnt/locust
+    command: -f locustfile.py --host=http://event-api:9000
+    depends_on:
+      - event-api
       
 volumes:
   grafana-storage:
